@@ -3,7 +3,7 @@ pipeline {
    stages {
      stage('Clonar codigo') {
        steps {
-          git "https://github.com/naoChiquito/jenkins.git"
+          git branch: 'main', url: "https://github.com/naoChiquito/jenkins.git"
        }
      }
      stage('Compilar') {
