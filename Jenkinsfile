@@ -3,7 +3,7 @@ pipeline {
    stages {
      stage('Clonar codigo') {
        steps {
-          git 'https://github.com/usuario/mi-repo.git'
+          git "https://github.com/naoChiquito/jenkins.git"
        }
      }
      stage('Compilar') {
@@ -18,4 +18,3 @@ pipeline {
      }
   }
 }
-
